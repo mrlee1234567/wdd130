@@ -1,3 +1,8 @@
+main img {
+    width: 150 px;
+    height: auto;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -22,5 +27,36 @@ img {
 }
 
 p {
-    padding: 10px;
+    padding: 0;
+}
+
+aside {
+    width: 30rem;
+    box-sizing: border-box;
+    margin: 0;
+    border: 5px double darkturquoise;
+    padding: 15px;
+    background-color: navajowhite;
+    color: rgb(42, 30, 53);
+}
+aside h2 {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 5rem;
+}
+aside img {
+   margin: 0 auto;
+   display: block;
+   width: 200px;
+   height: auto;
+   box-sizing: border-box;
+   text-align: center;
+   
+}
+
+footer {
+    margin-top: 10px;
+    border-top: 5px dotted navy;
+    text-align: center;
+    
 }
