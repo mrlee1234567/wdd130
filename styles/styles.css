@@ -1,9 +1,14 @@
+:root {
+    --im-wid: 150px;
+    --aside-col: rgb(42, 30, 53);
+}
+
 main {
     max-width: 300px;
 }
 
 main img {
-    width: 150px;
+    width: var(--im-wid);
     height: auto;
 }
 
@@ -23,7 +28,7 @@ h1 {
 }
 /* commengt oo */
 main img {
-    width: 150px;
+    width: var(--im-wid);
     height: auto;
     border: 1px solid black;
     padding: 2px;
@@ -41,7 +46,7 @@ aside {
     border: 5px double darkturquoise;
     padding: 15px;
     background-color: navajowhite;
-    color: rgb(42, 30, 53);
+    color: var(--aside-col);
 }
 aside h2 {
     margin: 0 auto;
