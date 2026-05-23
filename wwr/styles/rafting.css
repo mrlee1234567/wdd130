@@ -58,7 +58,7 @@ h1 {
     text-align: center;
     opacity: 0.7;
     background-color: var(--accent-color1);
-    color: wheat;
+    color: var(--secondary-color);
 }
 
 .hero article {
