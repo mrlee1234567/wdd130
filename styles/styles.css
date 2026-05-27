@@ -8,10 +8,6 @@ main {
     margin: 1rem;
 }
 
-main img {
-    width: var(--im-wid);
-    height: auto;
-}
 
 nav {
     display: flex;
