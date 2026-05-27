@@ -35,7 +35,9 @@ div {
 
 .container2 {
     /* write declarations here */
-
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .two {
@@ -45,12 +47,14 @@ div {
 
 .container3 {
     /* write declarations here */
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
 }
 
 .columns-3 {
     /* write declaration here */
-
+    grid-column: 1/4;
 }
 
 .three {

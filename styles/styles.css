@@ -5,6 +5,7 @@
 
 main {
     max-width: 300px;
+    margin: 1rem;
 }
 
 main img {
@@ -13,18 +14,24 @@ main img {
 }
 
 nav {
+    display: flex;
     background-color: darkblue;
     padding: 10px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 0.5rem;
+    margin: 5rem;
+    text-decoration: none;
 }
 
 h1 {
     color: darkblue;
+    border-bottom: 5px dotted indianred;
 }
 /* commengt oo */
 main img {
@@ -68,4 +75,19 @@ footer {
     border-top: 5px dotted navy;
     text-align: center;
     
+}
+
+header, footer, .grid {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.grid main {
+    order: 2;
 }
