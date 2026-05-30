@@ -2,7 +2,7 @@
     --primary-color: #d0c101;
     --secondary-color: blanchedalmond;
     --accent-color1: #4A412A;
-    --accent-color2: red;
+    --accent-color2: lime;
     /* as you can see, i have impecable taste in design */
     --heading-font: "Helvetica", "Comic Sans MS", sans-serif;
     --body-font: "Times New Roman", "Arial", serif
@@ -28,7 +28,7 @@ header, main, footer {
 
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--accent-color1);
 }
 
 nav, p, section, article {
@@ -145,10 +145,14 @@ section {
     row-gap: 0.5rem;
 }
 
+h2 {
+    background-color: var(--primary-color);
+}
+
 .history h2 {
     display: block;
     grid-column: span 3;
-    background-color: var(--secondary-color);
+    
     width: 100%;
     text-align: center;
     height: 2rem;
@@ -174,7 +178,7 @@ figure {
 }
 
 section h2 {
-    background-color: var(--secondary-color);
+    
     /* display: block; */
     /* justify-content: center; */
     width: 100%;
