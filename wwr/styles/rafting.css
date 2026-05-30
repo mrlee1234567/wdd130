@@ -42,12 +42,17 @@ nav, p, section, article {
 
 .hero {
     position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr auto;
 }
 
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+    /* position: relative; */
+    /* opacity: 1.0; */
 }
 
 h1 {
@@ -62,12 +67,131 @@ h1 {
 }
 
 .hero article {
+    display: block;
     position: absolute;
     background-color: var(--accent-color2);
-    
+    margin-top: 300px;
 }
 
 .hero article img {
     float: right;
     width: 125px;
+}
+
+
+
+header {
+    background-color: var(--primary-color);
+    position: relative;
+    height: 200px;
+    padding: 10px;
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr; */
+    justify-items: center;
+    align-items: center;
+}
+
+header img {
+    /* grid-column: 0; */
+    position: absolute;
+    width: auto;
+    height: 100%;
+    justify-self: flex-start;
+    padding: 1rem;
+    
+}
+
+
+
+header nav {
+    /* position: absolute; */
+    justify-self: flex-end;
+    justify-content: space-between;
+    grid-column: span 4;
+    width: auto;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 1rem; */
+}
+
+header nav a {
+    margin: 1rem;
+    padding: 0.5rem;
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color: var(--accent-color1);
+}
+
+main {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+
+section {
+    /* margin-top: 100px; */
+    margin: 1rem;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;
+    row-gap: 0.5rem;
+}
+
+.history h2 {
+    display: block;
+    grid-column: span 3;
+    background-color: var(--secondary-color);
+    width: 100%;
+    text-align: center;
+    height: 2rem;
+    /* padding: 1rem; */
+}
+
+.history p, img {
+    margin-top: 10px;
+}
+
+.adventure {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+figure {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+section h2 {
+    background-color: var(--secondary-color);
+    /* display: block; */
+    /* justify-content: center; */
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+.adventure figure img {
+    position: relative;
+    /* display: block; */
+    height: 100px;
+    width: auto;
+    /* margin: 0 auto; */
+}
+
+footer nav{
+    display: flex;
+    flex-direction: row-reverse;
 }
