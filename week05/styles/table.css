@@ -1,0 +1,19 @@
+table {
+    border-collapse: collapse;
+    display: block;
+    border: 5px solid black;
+    width: fit-content;
+    letter-spacing: 1px;
+}
+
+th, td {
+    border: 1px, solid, grey;
+    padding: 8px, 12px;
+    text-align: center;
+}
+
+thead tr, tfoot tr {
+    background-color: slategrey;
+    color: aliceblue;
+    font-weight: 700;
+}

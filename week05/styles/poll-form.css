@@ -1,0 +1,113 @@
+:root {
+    --heading-font: "Comic Sans MS", "Helvetica", sans-serif;
+    --body-font: "Arial", "Times New Roman", serif;
+    --submit-font: "Chiller", "Impact", fantasy;
+    /* i want to do something funny with the submit button, hence the weird fonts. we shall see if the fantasy is accepted */
+    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: 1.2em;
+    color: #333;
+    background-color: wheat;
+}
+
+header {
+    margin: 0 auto;
+    width: 700px;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    background-color: aquamarine;
+    color: darkorange;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+form {
+    display: grid;
+    width: 500px;
+    margin: 0 auto;
+    padding: 0.5rem;
+    border: #333 solid 2px;
+    border-radius: 1rem;
+    background-color: beige;
+}
+
+fieldset {
+    display: grid;
+    gap: 0.5rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+legend {
+    padding: 0.5rem;
+    color: darkblue;
+    font-size: 1.5rem;
+}
+
+label, input, select, textarea {
+    font-family: var(--body-font);
+    color: black;
+}
+
+button {
+    font-family: var(--submit-font);
+    color: gold;
+    background-color: red;
+    font-weight: 900;
+    font-size: 1.7rem;
+    width: 200px;
+    margin: 0 auto;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    font-size: larger;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button:hover {
+    background-color: darkorange;
+    color: darkred;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 700px;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
