@@ -45,6 +45,7 @@ nav, p, section, article {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr auto;
+    justify-content: center;
 }
 
 .hero img {
@@ -71,6 +72,8 @@ h1 {
     position: absolute;
     background-color: var(--accent-color2);
     margin-top: 300px;
+    justify-self: center;
+    align-self: center;
 }
 
 .hero article img {
@@ -135,10 +138,10 @@ section {
     margin: 1rem;
 }
 
-.history {
+.history, .contact {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr;
+    /* grid-template-rows: auto 1fr; */
     justify-items: center;
     align-items: center;
     padding: 1rem;
@@ -149,7 +152,7 @@ h2 {
     background-color: var(--primary-color);
 }
 
-.history h2 {
+.history h2, .contact h2 {
     display: block;
     grid-column: span 3;
     
@@ -163,7 +166,7 @@ h2 {
     margin-top: 10px;
 }
 
-.adventure {
+.adventure ,.employee {
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -198,4 +201,82 @@ section h2 {
 footer nav{
     display: flex;
     flex-direction: row-reverse;
+}
+
+.paddr {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact, .rad {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    /* grid-template-rows: 1fr; */
+    /* gap: 1rem; */
+}
+
+.contact {
+    position: relative;
+    gap: 1rem;
+}
+
+
+
+iframe {
+    width: 300px;
+    height: 300px;
+}
+
+.rad {
+    /* position: absolute; */
+    /* width: auto; */
+    text-align: left;
+    justify-content: center;
+    
+}
+
+.rad input {
+    width: 20px;
+}
+
+/* .contactform, .rad {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} */
+
+table {
+    border-collapse: collapse;
+    letter-spacing: 1px;
+    
+}
+
+tbody {
+    text-align: left;
+}
+
+th, td {
+    padding-top: 0.5rem;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--accent-color1);
+    font-size: 1.5rem;
+    border: 2px solid var(--accent-color1);
+}
+
+button:hover {
+    background-color: var(--accent-color1);
+    color: var(--secondary-color);
+    border-color: var(--accent-color1);
+}
+
+.employee figure img {
+    position: relative;
+    height: auto;
+    width: 200px;
+}
+
+.employee figure {
+    justify-content: flex-start;
 }

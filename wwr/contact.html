@@ -3,9 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact The Big Rotund Down The River Rafting Company">
+    <meta name="author" content="Jared Lee">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
-    
+    <header>
+        <img src="images/logo.jpeg" alt="Our Logo" width="300">
+        <!-- yes, the logo is crusty, i think its funnier that way -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="images/banner.jpeg" alt="Banner" width="500">
+            <!-- i had a better one i wanted to use... sadly, it was way too large for this, and i couldnt get it to be unter 126k, so this is the best i could do. i tend to have fun with these types of assignments -->
+            <h1>Big Rotund Floating Down The River Rafting Company</h1>
+                <article class="paddr">
+                    <p>999 E Faceeating River Rd</p>
+                    <p>Middle Of Nowhere, Rhode Island</p>
+                    <p>+1 999 999 9999</p>
+                    <p>info@brdrco.com</p>
+                    <!-- the idea will be "our motto is if its big round and rotund we float it down the river" -->
+                </article>
+        </div>
+        
+        <section>
+            <div class="contact">
+                <h2>Contact Us!</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14978.481326476855!2d41.13253995479342!3d37.88747545006184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1780691343419!5m2!1sen!2sus" width="300" height="225" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <form>
+                    <table>
+                        <thead>
+                            <th colspan="2">Message us!</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th><label for="fname">Full Name</label></th>
+                                <td><input type="text" name="fname" id="fname" required placeholder="John Doe"></td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="email">Your Email</label></th>
+                                <td><input type="email" name="email" id="email" required placeholder="joe@aol.com"></td>
+                            </tr>
+
+                            <tr>
+                                <th>Purpose of Contact</th>
+                                <td>
+                                    <div class="rad">
+                                        <input type="radio" id="inquiry" name="inquiry">
+                                        <label for="inquiry">General inquiry</label>
+
+                                        <input type="radio" id="reservation" name="reservation">
+                                        <label for="reservation">Reservation Question</label>
+
+                                        <input type="radio" id="suggestion" name="suggestion">
+                                        <label for="suggestion">Website Suggestion</label>
+                                    </div>
+                                </tr>
+                            </tr>
+
+                            <tr>
+                                <th colspan="2"><label for="message">Message</label></th>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><textarea name="message" id="message" rows="4" cols="60" required placeholder="Etaoin Shrdlu">Lorem Ipsum</textarea></td>
+                            </tr>
+                            
+                            <tr>
+                                <th><label for="newsletter">Please subscribe me to the monthly newsletter</label></th>
+                                <td><input type="checkbox" id="newsletter" name="newsletter"></td>
+                            </tr>
+                        </tbody>
+
+                        <tfoot>
+                            <th colspan="2"><button type="submit">Get in Touch!</button></th>
+                        </tfoot>
+                    </table>
+                </form>
+            </div>
+        </section>
+        <section>
+            <h2>Adventure Awaits You!</h2>
+            
+            <div class="employee">
+                <figure>
+                    <img src="images/employee.jpg" alt="Emmajane Doeson" width="200">
+                    <figcaption>Emmajane Doeson, Head of Excursions</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/pirate.jpg" alt="Scurvy Dave" width="200">
+                    <figcaption>David "Scurvy Dave" Black, Jaw River Tour Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/bedouin.jpg" alt="Gedo Hamud" width="200">
+                    <figcaption>Omar Muhammad Al-Abdhul, PR Manager</figcaption>
+                    <!-- the thing in the background is an iguana head photoshopped onto a giraffes neck colored green -->
+                </figure>
+                
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2026 Big Rotund Down The River Rafting Company | Jared Lee</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook-square.svg" alt="Faceboek" width="100">
+            </a>
+            <a href="https://www.snapchat.com/">
+                <img src="images/snapchat-square.svg" alt="Snapchart" width="100">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="images/youtube.png" alt="Youtude" width="100">
+            </a>
+        </nav>
+    </footer>
 </body>
 </html>
