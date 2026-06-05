@@ -25,11 +25,11 @@
             <!-- i had a better one i wanted to use... sadly, it was way too large for this, and i couldnt get it to be unter 126k, so this is the best i could do. i tend to have fun with these types of assignments -->
             <h1>Big Rotund Floating Down The River Rafting Company</h1>
                 <article class="paddr">
+                    <h2>Come Visit!</h2>
                     <p>999 E Faceeating River Rd</p>
                     <p>Middle Of Nowhere, Rhode Island</p>
                     <p>+1 999 999 9999</p>
-                    <p>info@brdrco.com</p>
-                    <!-- the idea will be "our motto is if its big round and rotund we float it down the river" -->
+                    <p>info@brfdrco.com</p>
                 </article>
         </div>
         
@@ -37,10 +37,11 @@
             <div class="contact">
                 <h2>Contact Us!</h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14978.481326476855!2d41.13253995479342!3d37.88747545006184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1780691343419!5m2!1sen!2sus" width="300" height="225" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- batman -->
                 <form>
                     <table>
                         <thead>
-                            <th colspan="2">Message us!</th>
+                            <tr><th colspan="2"><h2>Message us!</h2></th></tr>
                         </thead>
                         <tbody>
                             <tr>
@@ -57,16 +58,16 @@
                                 <th>Purpose of Contact</th>
                                 <td>
                                     <div class="rad">
-                                        <input type="radio" id="inquiry" name="inquiry">
+                                        <input type="radio" id="inquiry" name="purpose" required>
                                         <label for="inquiry">General inquiry</label>
 
-                                        <input type="radio" id="reservation" name="reservation">
+                                        <input type="radio" id="reservation" name="purpose" required>
                                         <label for="reservation">Reservation Question</label>
 
-                                        <input type="radio" id="suggestion" name="suggestion">
+                                        <input type="radio" id="suggestion" name="purpose" required>
                                         <label for="suggestion">Website Suggestion</label>
                                     </div>
-                                </tr>
+                                </td>
                             </tr>
 
                             <tr>
@@ -83,7 +84,7 @@
                         </tbody>
 
                         <tfoot>
-                            <th colspan="2"><button type="submit">Get in Touch!</button></th>
+                            <tr><th colspan="2"><button type="submit">Get in Touch!</button></th></tr>
                         </tfoot>
                     </table>
                 </form>
