@@ -26,12 +26,12 @@ header, main, footer {
     margin: 0 auto;
 }
 
-h1, h2 {
+h1, h2, .sub2 {
     font-family: var(--heading-font);
     color: var(--accent-color1);
 }
 
-nav, p, section, article {
+nav, p, section, article, .suba {
     margin: 16px;
     padding: 8px;
 }
@@ -67,7 +67,7 @@ h1 {
     color: var(--secondary-color);
 }
 
-.hero article {
+.hero article, .hero .suba {
     display: block;
     position: absolute;
     background-color: var(--accent-color2);
@@ -76,7 +76,7 @@ h1 {
     align-self: center;
 }
 
-.hero article img {
+.hero article img, .hero .suba img {
     float: right;
     width: 125px;
 }
@@ -148,11 +148,11 @@ section {
     row-gap: 0.5rem;
 }
 
-h2 {
+h2, .sub2 {
     background-color: var(--primary-color);
 }
 
-.history h2, .contact h2 {
+.history h2, .contact h2, .history .sub2, .contact .sub2 {
     display: block;
     grid-column: span 3;
     
@@ -180,7 +180,7 @@ figure {
     margin: 1rem;
 }
 
-section h2 {
+section h2, section .sub2 {
     
     /* display: block; */
     /* justify-content: center; */
@@ -283,7 +283,7 @@ button:hover {
     justify-content: flex-start;
 }
 
-thead th h2 {
+thead th h2, thead th .sub2 {
     background-color: #0000;
     font-size: 1rem;
 }
@@ -337,7 +337,7 @@ thead th h2 {
 
 }
 
-.about h2 {
+.about h2, .about .sub2 {
     grid-column: span 2;
     text-align: center;
     /* border-bottom: 2px solid var(--secondary-color); */
