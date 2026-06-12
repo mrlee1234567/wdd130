@@ -44,7 +44,7 @@ nav, p, section, article {
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr auto;
+    grid-template-rows: 1fr 1fr;
     justify-content: center;
 }
 
@@ -286,4 +286,74 @@ button:hover {
 thead th h2 {
     background-color: #0000;
     font-size: 1rem;
+}
+
+.indh th {
+    background-color: var(--accent-color2);
+}
+
+.ind {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--accent-color1);
+}
+
+.indh figure img {
+    display: block;
+    width: 30rem;
+    height: auto;
+    
+}
+
+.indh figure {
+    align-items: center;
+}
+
+.indh a {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    color: var(--accent-color1);
+    font-family: var(--heading-font);
+    font-weight: 900;
+}
+
+.indh figure figcaption {
+    display: block;
+    position: absolute;
+    
+    width: auto;
+    margin-bottom: 15rem;
+    
+    
+}
+
+.about {
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--accent-color2);
+    padding-bottom: 0.75rem;
+    align-items: center;
+
+}
+
+.about h2 {
+    grid-column: span 2;
+    text-align: center;
+    /* border-bottom: 2px solid var(--secondary-color); */
+    border-top: 2px solid var(--secondary-color);
+}
+
+.about img {
+    width: 175px;
+    height: auto;
+    justify-self: flex-end;
+    /* padding: 0.75rem; */
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+.about p {
+    justify-self: flex-start;
+    align-self: center;
 }

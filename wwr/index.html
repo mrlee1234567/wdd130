@@ -3,9 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home Page Of The Big Rotund Down The River Rafting Company">
+    <meta name="author" content="Jared Lee">
     <title>Home</title>
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
-    
+    <header>
+        <img src="images/logo.jpeg" alt="Our Logo" width="300">
+        <!-- yes, the logo is crusty, i think its funnier that way -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <body>
+        <!-- add a form to sign up to a newsletter -->
+         <!-- add a full width hero banner, styled by css with position:absolute -->
+          <!-- css grid layout with the purpose of the sight and 2 additonal pictures, adventure 6 and 7 are made for this -->
+           <!-- cannot be a single column flex to get full credit, be creative -->
+            <!-- add a "call to action" with a link to the trips page and wants you to visit said page -->
+        <div class="hero">
+            <img src="images/banner.jpeg" alt="Banner" width="500">
+            <h1>Big Rotund Floating Down The River Rafting Company</h1>
+            <table class="ind">
+                <!-- this has to be in the hero due to how the .hero class is written -->
+                <thead>
+                    <tr><th colspan="2">Welcome To BRFDTRCo!</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="indh">
+                            <figure>
+                                <img src="images/adventure4.jpg" width="200" alt="Friendly Joseph River">
+                                <figcaption><nav><a href="trips.html">Book a Trip Today!</a></figcaption>
+                            </figure>
+                        </td>
+                        <td>
+                            <form class="contact">
+                                <table>
+                                    <thead>
+                                        <tr class="indh"><th colspan="2">Sign Up For Our Newsletter!</th></tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th><label for="email">Email</label></th>
+                                            <td><input type="email" name="email" id="email" required></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th><label for="name">Full Name</label></th>
+                                            <td><input type="text" name="name" id="name"></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr><th colspan="2"><button type="submit">Sign Up!</button></th></tr>
+                                    </tfoot>
+                                </table>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+        </div>
+        <div class="about">
+            <h2>About This Site</h2>
+            <img src="images/adventure6.jpg" alt="Serene Hundred Drop Falls" width="100">
+            <p>Welcome to the homepage of the Big Rotund Floating Down The River Rafting Company! Here at BRFDTRC, we send big and round floating objects down the rivers of the world! From the Colorado to the Ganges, if we can send things down it, well send it!</p>
+            <img src="images/adventure7.jpg" alt="Peacefull Alligator Rapids" width="100">
+            <p>Here at our homepage, you can contact us to get in touch for a trip down river. We offer everything from rentals to trips to life insurance policies to training! Simply navigate to the trips page to book with us, or if you have other questions, check out our contact page.</p>
+        </div>
+    </body>
+    <footer>
+        <p>&copy;2026 Big Rotund Floating Down The River Rafting Company | Jared Lee</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com/">
+                <img src="images/facebook-square.svg" alt="Faceboek" width="100">
+            </a>
+            <a href="https://www.snapchat.com/">
+                <img src="images/snapchat-square.svg" alt="Snapchart" width="100">
+            </a>
+            <a href="https://www.youtube.com/">
+                <img src="images/youtube.png" alt="Youtude" width="100">
+            </a>
+        </nav>
+    </footer>
 </body>
 </html>
