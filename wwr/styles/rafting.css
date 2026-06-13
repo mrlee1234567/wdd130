@@ -357,3 +357,30 @@ thead th h2, thead th .sub2 {
     justify-self: flex-start;
     align-self: center;
 }
+
+.advns {
+    background-color: var(--accent-color2);
+    padding: 0.75rem;
+}
+
+.advns img {
+    padding: 0.75rem;
+    width: 200px;
+    height: auto;
+}
+
+.advns tbody th {
+    border-left: 2px dotted var(--secondary-color);
+    padding-left: 0.75rem;
+}
+
+.indt figure img {
+    display: block;
+    width: 25rem;
+    height: auto;
+    
+}
+
+.indt figure figcaption {
+    margin-bottom: 30rem;
+}
